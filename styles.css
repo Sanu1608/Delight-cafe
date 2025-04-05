@@ -1,0 +1,236 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5e1c5;
+    color: #3e2723;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4b2c20 !important;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffd54f !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffcc80 !important;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd54f !important;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('backgrong.jpg' )center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffcc80;
+    position: relative;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #8d6e63;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:hover {
+    background-color: #6d4c41;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Section */
+#menu {
+    background: url('und.jpg') center/cover no-repeat;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #6d4c41;
+    margin-bottom: 30px;
+}
+
+/* Menu Category Titles */
+.menu-category {
+    font-size: 2rem;
+    color: #8d6e63;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/* Menu Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    background-color: #d7ccc8;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card.animate-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #4b2c20;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Contact Section */
+#contact {
+    background: url('contact.jpeg') center/cover no-repeat;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-form button {
+    background-color: #ffcc80;
+    color: #3e2723;
+    font-size: 1.3rem;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #ffb74d;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+/* Section Dividers */
+.divider {
+    width: 100px;
+    height: 4px;
+    background-color: #8d6e63;
+    margin: 10px auto;
+    animation: fadeIn 1s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}

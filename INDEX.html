@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Café Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Café Delight</h1>
+        <p>Enjoy the finest coffee and delicious treats in town.</p>
+    </header>
+
+    <section id="about" class="container my-5 text-center">
+        <h2 class="about-title">Welcome to Café Delight</h2>
+        <p class="about-text">
+            Experience the perfect blend of rich flavors and comforting aromas at Café Delight. 
+            Our cozy café is a haven for coffee lovers and tea enthusiasts alike. 
+            We take pride in crafting every cup with the finest beans and tea leaves, ensuring 
+            a truly delightful experience. Relax, indulge, and let your taste buds embark on a journey of bliss.
+        </p>
+        <button class="learn-more-btn">Learn More</button>
+    </section>    
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5 text-center">
+        <h2>Our Menu</h2>
+
+        <!-- Coffee Section -->
+        <h3 class="menu-category">☕ Coffee</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images.jpeg" class="card-img-top" alt="Espresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Espresso</h5>
+                        <p class="price">399 Rs </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Cappuccino.jpg" class="card-img-top" alt="Cappuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="price">499 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Latte.jpg" class="card-img-top" alt="Latte">
+                    <div class="card-body">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="price">549 Rs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images (1).jpeg" class="card-img-top" alt="Mocha">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha</h5>
+                        <p class="price">599 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Americano.jpeg" class="card-img-top" alt="Americano">
+                    <div class="card-body">
+                        <h5 class="card-title">Americano</h5>
+                        <p class="price">449 Rs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tea Section -->
+        <h3 class="menu-category">🍵 Tea</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Green Tea.jpeg" class="card-img-top" alt="Green Tea">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Tea</h5>
+                        <p class="price">299 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Black Tea.jpeg" class="card-img-top" alt="Black Tea">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Tea</h5>
+                        <p class="price">349 Rs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Chamomile Tea.jpeg" class="card-img-top" alt="Chamomile Tea">
+                    <div class="card-body">
+                        <h5 class="card-title">Chamomile Tea</h5>
+                        <p class="price">399 Rs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-custom">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Café Delight. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth scrolling
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Animate menu cards
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-card');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+
+</body>
+</html>
